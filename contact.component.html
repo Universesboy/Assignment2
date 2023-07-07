@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="contact.component.scss" rel="stylesheet" type="text/scss">
+</head>
+<body>
+  <div id="allPage">
+    <div id="back"></div>
+    <div id="header">
+      <img alt="Header" src="cz.png" height="100">
+    </div>
+    <div id="nav">
+      <table>
+        <tr>
+          <td><a href="home.component.html">Home</a></td>
+          <td><a href="about.component.html">About me</a></td>
+          <td><a href="project.component.html">Projects</a></td>
+          <td><a href="services.component.html">Services</a></td>
+          <td><a href="contact.component.html">Contact Me</a></td>
+          <td><a href="login.component.html">Login</a></td>
+          </tr>
+      </table>
+    </div>
+    <div id="content">
+      <form action="mailto:kzhou17@my.centennialcollege.ca" method="post">
+        <h1>Contact Us</h1>
+        <p>Email us with any questions or inquiries. We would be happy to answer your questions and set up a meeting with you.</p>
+        <table>
+          <tr>
+            <td class="fieldLabel">Name</td>
+            <td>
+              <input id="name" name="txtName" size="50" type="text" required placeholder=" ">
+            </td>
+          </tr>
+          <tr>
+            <td class="fieldLabel">Phone number:</td>
+            <td>
+              <input id="phone" name="txtPhoneNumber" size="15" type="tel" required placeholder="">
+            </td>
+          </tr>
+          <tr>
+            <td class="fieldLabel">Email:</td>
+            <td>
+              <input id="email" name="txtEmail" size="50" type="email" required placeholder=" ">
+            </td>
+          </tr>
+          <tr>
+            <td class="fieldLabel">Message:</td>
+            <td>
+              <textarea id="message" cols="100" name="txtMessage" rows="10" required placeholder="Type your message here."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="fieldLabel">
+              <input id="btnSubmit" name="btnSubmit" type="submit" value="Send Information">
+            </td>
+            <td>
+              <input id="btnReset" name="btnReset" type="reset" value="Clear Form">
+            </td>
+          </tr>
+        </table>
+        <br>
+      </form>
+      <div id="contact-links">
+        <p>Contact me:</p>
+        <ul>
+          <li>Email: <a href="mailto:kzhou17@my.centennialcollege.ca">kzhou17@my.centennialcollege.ca</a></li>
+          <li>Github: <a href="https://github.com/Universesboy">github.com/Universesboy</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/zhou-keyu-621a97187/">linkedin.com/in/zhou keyu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a routerLink="/home">Home</a></p>
+      <br>
+      <p>&copy;Assignment 1 WEB APPLICATION DEVELOPMENT</p>
+    </div>
+  </div>
+</body>
+</html>
